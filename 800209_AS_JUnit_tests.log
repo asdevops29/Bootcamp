@@ -1,0 +1,94 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36morg.devops:devops-test-app[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding devops-test-app 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/asdevops29/eclipse-workspace/cicd-pipeline/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 3 source files to /home/asdevops29/eclipse-workspace/cicd-pipeline/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 0 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /home/asdevops29/eclipse-workspace/cicd-pipeline/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.[1mTestSaySomethingService[m
+11:58:26.691 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:58:26.727 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:58:26.761 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.TestSaySomethingService] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:58:26.777 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.TestSaySomethingService], using SpringBootContextLoader
+11:58:26.788 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.TestSaySomethingService]: class path resource [com/TestSaySomethingService-context.xml] does not exist
+11:58:26.795 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.TestSaySomethingService]: class path resource [com/TestSaySomethingServiceContext.groovy] does not exist
+11:58:26.799 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.TestSaySomethingService]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:58:26.804 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.TestSaySomethingService]: TestSaySomethingService does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:58:26.885 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.TestSaySomethingService]
+11:58:27.111 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/asdevops29/eclipse-workspace/cicd-pipeline/target/classes/com/Application.class]
+11:58:27.151 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.Application for test class com.TestSaySomethingService
+11:58:27.323 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.TestSaySomethingService]: using defaults.
+11:58:27.336 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+11:58:27.352 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+11:58:27.353 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+11:58:27.354 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3b6d844d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36804139, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@20bd8be5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@730d2164, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24959ca4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10289886, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5c86dbc5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@461ad730, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4ee203eb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1a5a4e19]
+11:58:27.360 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@45efd90f testClass = TestSaySomethingService, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4b8729ff testClass = TestSaySomethingService, locations = '{}', classes = '{class com.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@765d7657, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2d3379b4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@45752059, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@662ac478], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+11:58:27.447 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2020-07-21 11:58:28.329  INFO 10196 --- [           main] com.TestSaySomethingService              : Starting TestSaySomethingService on bootcamp with PID 10196 (started by asdevops29 in /home/asdevops29/eclipse-workspace/cicd-pipeline)
+2020-07-21 11:58:28.341  INFO 10196 --- [           main] com.TestSaySomethingService              : No active profile set, falling back to default profiles: default
+2020-07-21 11:58:33.539  INFO 10196 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:58:33.737  INFO 10196 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-21 11:58:34.163  INFO 10196 --- [           main] com.TestSaySomethingService              : Started TestSaySomethingService in 6.696 seconds (JVM running for 8.961)
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.214 s - in com.[1mTestSaySomethingService[m
+[[1;34mINFO[m] Running com.[1mTestCalculatorService[m
+2020-07-21 11:58:34.683  INFO 10196 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.TestCalculatorService], using SpringBootContextLoader
+2020-07-21 11:58:34.684  INFO 10196 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.TestCalculatorService]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-07-21 11:58:34.684  INFO 10196 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.TestCalculatorService]: TestCalculatorService does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-07-21 11:58:34.687  INFO 10196 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.Application for test class com.TestCalculatorService
+2020-07-21 11:58:34.688  INFO 10196 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-07-21 11:58:34.690  INFO 10196 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@66e12c3b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@44485db, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1f6f0fe2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@22604c7e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d8f2cfd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6d4502ca, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@ab2009f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a11ae0b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e4d8770, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5b5b9521]
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in com.[1mTestCalculatorService[m
+2020-07-21 11:58:34.899  INFO 10196 --- [       Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 10, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.1.2:jar[m [1m(default-jar)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/asdevops29/eclipse-workspace/cicd-pipeline/target/devops-test-app-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.1.7.RELEASE:repackage[m [1m(repackage)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Replacing main artifact with repackaged archive
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.1.7.RELEASE:repackage[m [1m(default)[m @ [36mdevops-test-app[0;1m ---[m
+[[1;34mINFO[m] Replacing main artifact with repackaged archive
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  18.668 s
+[[1;34mINFO[m] Finished at: 2020-07-21T11:58:36+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
