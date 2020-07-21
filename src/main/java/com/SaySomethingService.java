@@ -27,7 +27,7 @@ public class SaySomethingService {
 		return "Hello!";
 	}
 	
-	@GetMapping("/hello/{idMsg}")
+	@GetMapping("/something/{idMsg}")
 	public String saySomething(@PathVariable("idMsg") String msg) {
 		return msg;
 	}
