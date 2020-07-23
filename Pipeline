@@ -1,0 +1,51 @@
+node 
+{
+
+    stage('git checkout')
+    {
+        //cicd-pipeline springboot app from asdevops29 repo
+        git credentialsId: 'asdevops29-git', url: 'https://github.com/asdevops29/Bootcamp.git'
+    }
+    
+    stage('code build & test')
+    {
+        def mavenHome = tool name: 'maven-3', type: 'maven'
+        def mavenCMD = "${mavenHome}/bin/mvn" 
+        sh "${mavenCMD} clean package"
+    }
+    
+    stage('docker build')
+    {
+        //dockerImage = docker.build("asdevops29/cicd-pipeline:${env.BUILD_NUMBER}.0")
+        def dockerTool = tool name: 'docker-jenkins', type: 'org.jenkinsci.plugins.docker.commons.tools.DockerTool'
+        withEnv(["DOCKER=${dockerTool}/docker/docker"]) 
+        {
+            sh "sudo ${DOCKER} build -t asdevops29/cicd-pipeline:${env.BUILD_NUMBER}.0 ."
+        }
+    }
+    
+    stage('docker push')
+    {
+        //docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-pass') 
+        //{
+        //    dockerImage.push()
+        //}
+        withCredentials([string(credentialsId: 'dockerhub-pass-text', variable: 'dockerPwd')]) 
+        {
+            sh "docker login -u asdevops29 -p ${dockerPwd}"
+        }
+        sh "docker push asdevops29/cicd-pipeline:${env.BUILD_NUMBER}.0"
+    }
+    
+    stage('push image to pcf')
+    {
+        sh "cf push cicd-pipeline-${env.BUILD_NUMBER}.0 --docker-image asdevops29/cicd-pipeline:${env.BUILD_NUMBER}.0"
+    }
+    
+    stage('docker run')
+    {
+        //dockerImage.run('-p 8089:9090 -d')
+        sh "docker run -p 8089:9090 -d asdevops29/cicd-pipeline:${env.BUILD_NUMBER}.0"
+        
+    }
+}
